@@ -26,7 +26,22 @@
             height: 100%;
             overflow: hidden;
         }
+        
+        /* Stile generale per desktop */
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          word-wrap: break-word; /* Gestisce il testo lungo */
+        }
 
+        /* Stile per schermi piccoli (mobile) */
+        @media (max-width: 768px) {
+          p {
+            font-size: 14px; /* Dimensione del testo ridotta per mobile */
+            text-align: justify; /* Allinea meglio il testo */
+            line-height: 1.6;
+          }
+        }
         /* Remove margin, padding, and enforce box sizing globally */
         * {
             margin: 0;
